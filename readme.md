@@ -1,3 +1,5 @@
+> 完整说明文档详见：https://blog.csdn.net/baidu_33591715/article/details/114078578
+
 ## 项目准备
 
 ```js
@@ -165,10 +167,10 @@ module.exports = {
         <img :src="url" />
       </div>
     </template>
-
+    
     <script>
     import logo from './assets/logo.png';
-
+    
     export default {
       data() {
         return {
@@ -178,7 +180,7 @@ module.exports = {
       },
     };
     </script>
-
+    
     <style>
     .example {
       color: red;
@@ -283,3 +285,4 @@ resolve: {
 // App.vue 引入
 import App from '@/App.vue';
 ```
+

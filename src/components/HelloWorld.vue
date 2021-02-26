@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <button v-on:click="load"> Click me to load a dynamic componnet </button>
     <p>
       For a guide and recipes on how to configure / customize this project,<br>
       check out the
@@ -35,6 +36,13 @@ export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  methods: {
+    load: function() {
+      import('./Dynamic').then(comp => {
+        this.dynamic = comp
+      })
+    }
   }
 }
 </script>
